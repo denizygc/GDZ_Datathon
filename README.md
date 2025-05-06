@@ -1,12 +1,44 @@
-# GDZ_Datathon
+# ⚡ GDZ Datathon Energy Forecasting Project
 
-Gdz Elektrik, which delivers electrical energy, which is indispensable for daily life in Izmir and Manisa provinces, to its consumers with its people-oriented service approach and modern technology systems, is launching the second of its traditional Datathon series. 🏙
+This project was originally developed as part of the **GDZ Elektrik Datathon**, a data science competition focused on forecasting **energy distribution** across network centers in İzmir and Manisa, Turkey. The goal is now to evolve the original model exploration into a functional and interactive **web application**.
 
-Expectation:
-Participants are expected to develop an "energy distribution" forecasting approach for the network centers under the responsibility of Gdz Elektrik with the data set presented. 🎯
+---
 
-Description-1
-Any data that is thought to be related to the variable in the dataset and that can be used externally to add factors that will affect the energy distributed is available to us. However, we stated at the opening that we left space for the contestants as we cannot open every data for external use due to company policy. We have the realization data to evaluate the predictions made by the contestants.
+## 🏁 Competition Overview
 
-Explanation-2
-At the end of the competition, the notebooks of the first 30 teams will be requested. Criteria such as the external data used by the teams, the features produced, whether alternative solution methods were used will be evaluated.
+> Gdz Elektrik, serving the provinces of İzmir and Manisa, launched its second **Datathon** event aiming to drive innovation in energy forecasting using modern data science techniques and external datasets.
+
+### Challenge Goal
+
+Participants were tasked with developing a **forecasting approach** for predicting the energy distributed by network centers. Realization data (actuals) were provided to evaluate the performance of the models.
+
+Additional external datasets could be integrated to improve performance, though some data limitations were in place due to company policy.
+
+---
+
+## Project Redesign & Web App Goals
+
+After the competition, this project has been **redesigned and refactored** with the following goals in mind:
+
+- Build a **modular and maintainable ML pipeline**
+- Try both **LSTM ** and **scikit-learn models** 
+- Develop a lightweight **Flask-based web app** to interactively explore predictions
+- Follow SOLID principles and best practices for code structure
+
+---
+
+## Project Structure
+
+GDZ_DATATHON/
+├── notebooks/               # Exploratory notebooks and EDA
+├── src/
+│ ├── data/                  # Data loading & preparation scripts
+│ ├── model/                 # Model definitions (LSTM, sklearn)
+│ ├── preprocessing/         # Feature engineering and cleaning
+│ ├── utils/                 # Helpers (e.g. logger, metrics)
+│ ├── config.py              # Centralized configurations
+│ └── main.py                # Entry point script
+├── test/                    # Unit tests for core functions
+├── venv-gdz/                # Virtual environment (excluded via .gitignore)
+├── .gitignore               # Git exclusions
+└── README.md                # Project description and goals
